@@ -103,7 +103,33 @@ a {
   border-left: none;
   border-top: none;
 }
-  </style>
+  
+
+.quote-intro {
+  font-family: 'Georgia', serif;
+  font-style: italic;
+  font-size: 1.3rem;
+  color: #d4af37;
+  text-align: center;
+  margin: 3rem auto 2rem;
+  opacity: 0;
+  animation: fadeIn 2s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+
+
+.deco-line {
+  height: 2px;
+  width: 180px;
+  background: linear-gradient(to right, transparent, #d4af37, transparent);
+  margin: 1rem auto 3rem;
+}
+
+</style>
 <!-- Google tag (gtag.js) -->
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-4R5MGM2N5M">
 </script>
@@ -134,7 +160,7 @@ a {
 </div>
 </div>
 <div class="container">
-<div class="about-content">
+<div class="quote-intro">“I write music for stories that don’t need words.”</div><div class="deco-line"></div><div class="about-content">
 <div class="photo-frame">
 <img alt="Maxim Novak portrait" src="/maxim-portrait-about.jpg"/>
 <div class="photo-caption">
