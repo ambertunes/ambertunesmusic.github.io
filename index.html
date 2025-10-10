@@ -17,37 +17,93 @@
   <meta name="twitter:title" content="AmberTunes — Maxim Novak">
   <meta name="twitter:description" content="Cinematic, jazz and bossa nova instrumentals for filmmakers and storytellers.">
   <meta name="twitter:image" content="https://ambertunesmusic.github.io/assets/og-main.jpg">
+
   <style>
-    :root{
-      --bg:#000;
-      --fg:#e6e6e6;
-      --muted:#a8a8a8;
-      --card:#111;
-      --border:#555;
+    :root {
+      --bg: #000;
+      --fg: #e6e6e6;
+      --muted: #9c9c9c;
+      --border: #2a2a2a;
     }
-    html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, "Helvetica Neue", sans-serif;line-height:1.55;}
-    a{color:#d9d9d9;text-decoration:none}
-    a:hover{text-decoration:none}
-    .container{max-width:1100px;margin:0 auto;padding:0 16px;}
-    header{padding:28px 0 0;}
-    /* Main navigation */
-    .main-menu{display:flex;flex-direction:column;align-items:center;gap:12px;margin:28px 0 0;padding:0;}
-    .main-menu a{display:inline-block;width:180px;text-align:center;padding:10px 0;border:1px solid var(--border);border-radius:12px;color:#e0e0e0;background-color:#111;letter-spacing:.4px;transition:all .25s ease;}
-    .main-menu a:hover{color:#fff;border-color:#888;background:#1b1b1b;box-shadow:0 0 8px rgba(255,255,255,.1);transform:translateY(-2px);}
-    /* Hero */
-    .hero{margin:36px auto 24px;max-width:900px;text-align:center;padding:20px;border-radius:16px;background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));border:1px solid #1e1e1e;}
-    .hero h1{font-weight:600;font-size:2rem;margin:0 0 8px;}
-    .hero p{margin:0;color:var(--muted)}
-    /* Footer */
-    footer{margin:40px 0 24px;color:#8a8a8a;font-size:.9rem;text-align:center;}
-    @media(min-width:720px){
-      .main-menu{gap:14px}
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, "Helvetica Neue", sans-serif;
+      line-height: 1.55;
+      text-align: center;
+    }
+
+    a { color: #d9d9d9; text-decoration: none; }
+    a:hover { color: #fff; }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+
+    header { padding: 18px 0 0; }
+
+    /* ——— Menu ——— */
+    .main-menu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      margin: 16px 0 8px;
+    }
+
+    .main-menu a {
+      display: inline-block;
+      width: 200px;
+      text-align: center;
+      padding: 9px 0;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: transparent;
+      color: #ddd;
+      letter-spacing: .3px;
+      transition: border-color .2s ease, color .2s ease, background-color .2s ease;
+    }
+
+    .main-menu a:hover {
+      border-color: #5a5a5a;
+      background: #101010;
+      color: #fff;
+    }
+
+    /* ——— Hero block ——— */
+    .hero {
+      margin: 14px auto 12px;
+      padding: 0;
+    }
+
+    .hero h1 {
+      font-size: 1.9rem;
+      margin: 0 0 6px;
+      font-weight: 600;
+    }
+
+    .hero p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    /* ——— Footer ——— */
+    footer {
+      margin: 28px 0 24px;
+      color: #8a8a8a;
+      font-size: .9rem;
     }
   </style>
 </head>
+
 <body>
   <header class="container">
-    <!-- Navigation -->
     <nav class="main-menu">
       <a href="index.html">Home</a>
       <a href="music.html">Music</a>
@@ -59,14 +115,10 @@
   </header>
 
   <main class="container">
-    <!-- Keep your existing beautiful first screen/hero. 
-         You can paste your current content inside this .hero block or below it. -->
     <section class="hero">
       <h1>AmberTunes — Music & Visual Stories</h1>
       <p>Cinematic, jazz & bossa nova instrumentals by Maxim Novak. Made for films, documentaries and quiet moments.</p>
     </section>
-
-    <!-- OPTIONAL placeholder for existing homepage content -->
   </main>
 
   <footer class="container">
