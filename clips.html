@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Clips — AmberTunes by Maxim Novak</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Romantic and cinematic music clips by Maxim Novak (AmberTunes). Watch embedded YouTube videos; views count on YouTube.">
+  <meta name="keywords" content="AmberTunes, Maxim Novak, music clips, bossa nova, jazz, cinematic, romantic video">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Clips — AmberTunes">
+  <meta property="og:description" content="Romantic and cinematic music clips. Embedded YouTube (views count).">
+  <meta property="og:url" content="https://ambertunesmusic.github.io/clips.html">
+  <meta property="og:image" content="https://ambertunesmusic.github.io/assets/og-clips.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Clips — AmberTunes">
+  <meta name="twitter:description" content="Romantic and cinematic music clips.">
+  <meta name="twitter:image" content="https://ambertunesmusic.github.io/assets/og-clips.jpg">
+  <style>
+    :root{ --bg:#000; --fg:#e6e6e6; --muted:#a8a8a8; --border:#555; }
+    html,body{ margin:0; padding:0; background:var(--bg); color:var(--fg);
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,"Helvetica Neue",sans-serif; line-height:1.55; }
+    a{ color:#d9d9d9; text-decoration:none } a:hover{ text-decoration:none }
+    .container{ max-width:1100px; margin:0 auto; padding:0 16px; }
+    header{ padding:28px 0 0; }
+
+    /* Menu */
+    .main-menu{
+      display:flex; flex-direction:column; align-items:center; gap:12px; margin:28px 0 0; padding:0;
+    }
+    .main-menu a{
+      display:inline-block; width:180px; text-align:center; padding:10px 0;
+      border:1px solid var(--border); border-radius:12px; color:#e0e0e0;
+      background-color:#111; transition:all .3s ease;
+      box-shadow:0 3px 6px rgba(255,255,255,0.06);
+    }
+    .main-menu a:hover{
+      background-color:#1b1b1b; transform:translateY(-2px);
+      box-shadow:0 6px 12px rgba(255,255,255,0.08);
+    }
+
+    /* Hero */
+    .hero{
+      margin:140px auto 24px; max-width:900px; text-align:center; padding:20px;
+      border-radius:16px; background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.01));
+      border:1px solid #1e1e1e;
+    }
+    @media(min-width:1000px){ .hero{ margin-top:190px; } }
+    .hero h1{ font-weight:600; font-size:2rem; margin:0 0 8px; }
+    .hero p{ margin:0; color:var(--muted); }
+
+    /* Video grid */
+    .video-grid{ display:grid; grid-template-columns:1fr; gap:18px; margin:36px 0 50px; }
+    @media(min-width:720px){ .video-grid{ grid-template-columns:1fr 1fr; } }
+    .video-card{ background:#111; border:1px solid #222; border-radius:14px; padding:14px; }
+    .video-wrapper{ position:relative; width:100%; aspect-ratio:16/9; border-radius:10px; overflow:hidden; background:#000; }
+    .video-wrapper iframe{ position:absolute; inset:0; width:100%; height:100%; border:0; }
+    .video-card h3{ margin:.6rem 0 .2rem; font-size:1.05rem; }
+    .video-card p{ margin:0; color:var(--muted); font-size:.95rem; }
+
+    footer{ margin:40px 0 24px; color:#8a8a8a; font-size:.9rem; text-align:center; }
+  </style>
+</head>
+<body>
+  <header class="container">
+    <nav class="main-menu">
+      <a href="index.html">Home</a>
+      <a href="music.html">Music</a>
+      <a href="clips.html">Clips</a>
+      <a href="films.html">Films</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Clips</h1>
+      <p>Short music videos and romantic vignettes. Embedded via YouTube — views count for your channel.</p>
+    </section>
+
+    <section class="video-grid">
+      <article class="video-card">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/v=rWx0naiSBMI" title="Clip 1" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+        <h3>Clip title 1</h3>
+        <p>1–2 lines about the mood.</p>
+      </article>
+
+      <article class="video-card">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" title="Clip 2" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+        <h3>Clip title 2</h3>
+        <p>Short poetic line.</p>
+      </article>
+
+      <article class="video-card">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/VIDEO_ID_3" title="Clip 3" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+        <h3>Clip title 3</h3>
+        <p>Gentle bossa/jazz texture.</p>
+      </article>
+
+      <article class="video-card">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/VIDEO_ID_4" title="Clip 4" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+        <h3>Clip title 4</h3>
+        <p>City lights. Late night.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="container">
+    <small>© AmberTunes — Maxim Novak</small>
+  </footer>
+</body>
+</html>
