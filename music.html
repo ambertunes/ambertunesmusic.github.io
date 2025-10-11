@@ -2,55 +2,88 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Music — AmberTunes by Maxim Novak</title>
+  <title>Music — AmberTunes</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Instrumental retro, jazz and cinematic music by Maxim Novak (AmberTunes). Curated selections for filmmakers and storytellers.">
-  <meta name="keywords" content="AmberTunes, Maxim Novak, instrumental, retro, jazz, bossa nova, cinematic, documentary music, soundtrack">
-  <!-- Open Graph -->
+  <meta name="description" content="Instrumental collections by Maxim Novak — cinematic, jazz and bossa nova moods for films and storytelling.">
+  <meta name="keywords" content="AmberTunes, Maxim Novak, instrumental music, bossa nova, jazz, soundtrack, documentary music">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Music — AmberTunes">
-  <meta property="og:description" content="Instrumental retro, jazz and cinematic music for film and documentary.">
+  <meta property="og:title" content="AmberTunes — Music by Maxim Novak">
+  <meta property="og:description" content="Cinematic, jazz & bossa nova instrumentals by Maxim Novak. Made for films, documentaries and quiet moments.">
   <meta property="og:url" content="https://ambertunesmusic.github.io/music.html">
-  <meta property="og:image" content="https://ambertunesmusic.github.io/assets/og-music.jpg">
-  <!-- Twitter -->
+  <meta property="og:image" content="https://ambertunesmusic.github.io/assets/og-main.jpg">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Music — AmberTunes by Maxim Novak">
-  <meta name="twitter:description" content="Curated collections for filmmakers and storytellers.">
-  <meta name="twitter:image" content="https://ambertunesmusic.github.io/assets/og-music.jpg">
+  <meta name="twitter:title" content="AmberTunes — Music by Maxim Novak">
+  <meta name="twitter:description" content="Cinematic, jazz & bossa nova instrumentals by Maxim Novak.">
+  <meta name="twitter:image" content="https://ambertunesmusic.github.io/assets/og-main.jpg">
+
   <style>
     :root{
-      --bg:#000;
-      --fg:#e6e6e6;
-      --muted:#a8a8a8;
-      --card:#111;
-      --border:#555;
+      --bg:#000; --fg:#e6e6e6; --muted:#a8a8a8; --border:#555;
     }
-    html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, "Helvetica Neue", sans-serif;line-height:1.55;}
+    html,body{
+      margin:0; padding:0; background:var(--bg); color:var(--fg);
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,"Helvetica Neue",sans-serif;
+      line-height:1.55;
+    }
     a{color:#d9d9d9;text-decoration:none}
+    a:hover{text-decoration:none}
     .container{max-width:1100px;margin:0 auto;padding:0 16px;}
     header{padding:28px 0 0;}
 
-    /* Main navigation */
-    .main-menu{display:flex;flex-direction:column;align-items:center;gap:12px;margin:28px 0 0;padding:0;}
-    .main-menu a{display:inline-block;width:180px;text-align:center;padding:10px 0;border:1px solid var(--border);border-radius:12px;color:#e0e0e0;background-color:#111;letter-spacing:.4px;transition:all .25s ease;}
-    .main-menu a:hover{color:#fff;border-color:#888;background:#1b1b1b;box-shadow:0 0 8px rgba(255,255,255,.1);transform:translateY(-2px);}
+    /* Navigation */
+    .main-menu{
+      display:flex;flex-direction:column;align-items:center;gap:12px;margin:28px 0 0;padding:0;
+    }
+    .main-menu a{
+      display:inline-block;width:180px;text-align:center;padding:10px 0;
+      border:1px solid var(--border);border-radius:12px;color:#e0e0e0;
+      background-color:#111;transition:all .3s ease;
+      box-shadow:0 3px 6px rgba(255,255,255,0.06);
+    }
+    .main-menu a:hover{
+      background-color:#1b1b1b;transform:translateY(-2px);
+      box-shadow:0 6px 12px rgba(255,255,255,0.08);
+    }
 
-    /* Section title */
-    h1{font-size:1.8rem;margin:28px 0 6px;font-weight:600;}
-    .sub{color:var(--muted);margin:0 0 18px;}
+    /* Hero section */
+    .hero{
+      margin:140px auto 24px;
+      max-width:900px;text-align:center;padding:20px;
+      border-radius:16px;
+      background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.01));
+      border:1px solid #1e1e1e;
+    }
+    @media(min-width:1000px){
+      .hero{ margin-top:190px; }
+    }
+    .hero h1{font-weight:600;font-size:2rem;margin:0 0 8px;}
+    .hero p{margin:0;color:var(--muted);}
 
-    /* Collections grid */
-    .grid{display:grid;grid-template-columns:1fr;gap:18px;margin:18px 0 30px;}
-    @media(min-width:720px){.grid{grid-template-columns:1fr 1fr;}}
-    .card{background:var(--card);border:1px solid #1e1e1e;border-radius:16px;padding:16px;}
-    .card h2{margin:0 0 6px;font-size:1.2rem}
-    .card p{margin:0;color:var(--muted)}
-
-    /* Explore links */
-    .explore{margin:28px 0 50px;color:#cfcfcf}
-    .explore a{color:#fff;text-decoration:underline}
+    /* Music blocks */
+    .collections{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:24px;
+      margin:40px 0;
+    }
+    .card{
+      background:#111;
+      border:1px solid #222;
+      border-radius:14px;
+      padding:16px;
+      text-align:center;
+      transition:all .3s ease;
+    }
+    .card:hover{
+      background:#181818;
+      transform:translateY(-4px);
+    }
+    .card h2{font-size:1.2rem;margin:8px 0 6px;}
+    .card p{color:var(--muted);font-size:.95rem;margin:0;}
+    footer{margin:40px 0 24px;color:#8a8a8a;font-size:.9rem;text-align:center;}
   </style>
 </head>
+
 <body>
   <header class="container">
     <nav class="main-menu">
@@ -64,38 +97,33 @@
   </header>
 
   <main class="container">
-    <h1>Music Collections</h1>
-    <p class="sub">Curated selections of instrumental retro, jazz and cinematic pieces.</p>
-
-    <!-- Paste your existing music collection blocks inside the .grid below -->
-    <section class="grid">
-      <article class="card">
-        <h2>Urban Romance: Echoes of the City</h2>
-        <p>Five tracks for night streets and quiet conversations.</p>
-      </article>
-
-      <article class="card">
-        <h2>Sunset Nova — Stories Told in Samba and Light</h2>
-        <p>Warm bossa nova moods for golden-hour scenes.</p>
-      </article>
-      
-      <article class="card">
-        <h2>Nature Notes: Songs from the Meadow</h2>
-        <p>Gentle acoustic textures for reflective storytelling.</p>
-      </article>
-
-      <article class="card">
-        <h2>Folk Stories: Whispered on the Wind</h2>
-        <p>Folk-inspired instrumentals with a lyrical heart.</p>
-      </article>
-
-      <article class="card">
-        <h2>Night Letters</h2>
-        <p>Late-night letters that were never sent.</p>
-      </article>
+    <section class="hero">
+      <h1>AmberTunes — Music Collections</h1>
+      <p>Instrumental soundscapes by Maxim Novak: bossa nova, jazz, folk, and cinematic moods.</p>
     </section>
 
-    <p class="explore">🎬 Explore: <a href="clips.html">Clips</a> • <a href="films.html">Films</a></p>
+    <section class="collections">
+      <div class="card">
+        <h2>Urban Romance: Echoes of the City</h2>
+        <p>Stories told through late-night lights and gentle rhythms.</p>
+      </div>
+      <div class="card">
+        <h2>Sunset Nova</h2>
+        <p>Stories told in samba and light — warm, nostalgic, tender.</p>
+      </div>
+      <div class="card">
+        <h2>Nature Notes: Songs from the Meadow</h2>
+        <p>Calm reflections inspired by nature’s quiet pulse.</p>
+      </div>
+      <div class="card">
+        <h2>Folk Stories: Whispered on the Wind</h2>
+        <p>Acoustic moods, simple beauty, human warmth.</p>
+      </div>
+      <div class="card">
+        <h2>Night Letters</h2>
+        <p>Letters never sent — slow, contemplative, intimate.</p>
+      </div>
+    </section>
   </main>
 
   <footer class="container">
